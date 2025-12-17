@@ -1,0 +1,16 @@
+{
+  "features": [
+    "num_sentences",
+    "num_tokens",
+    "avg_sentence_length",
+    "num_verbs",
+    "num_subjects",
+    "pronoun_ratio",
+    "conjunction_ratio",
+    "verb_tense_variety"
+  ],
+  "target": "Content",
+  "model": "RandomForestRegressor",
+  "mae": 16.170009952055914,
+  "rmse": 20.694762237849304
+}
