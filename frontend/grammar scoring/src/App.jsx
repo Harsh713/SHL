@@ -1,10 +1,10 @@
 import { useState } from "react";
-import Header from "/components/Header";
-import AudioUpload from "/components/AudioUpload";
-import AnalyzeButton from "/components/AnalyzeButton";
-import TranscriptBox from "/components/TranscriptBox";
-import ScoreCard from "/components/Scorecard";
-import ExplanationBox from "/components/ExplanationBox";
+import Header from "../components/header";
+import AudioUpload from "../components/AudioUpload";
+import AnalyzeButton from "../components/AnalyzeButton";
+import TranscriptBox from "../components/TranscriptBox";
+import ScoreCard from "../components/Scorecard";
+import ExplanationBox from "../components/ExplanationBox";
 
 function App() {
   const [audioFile, setAudioFile] = useState(null);
@@ -27,7 +27,7 @@ function App() {
         setTranscript={setTranscript}
         setExplanation={setExplanation}
       />
-      
+
 
       <TranscriptBox transcript={transcript} />
       <ScoreCard score={score} />
